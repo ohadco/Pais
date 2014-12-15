@@ -25,7 +25,7 @@ public class PaisTest extends TestCase {
     // runs before the tests suite
     @BeforeClass
     public void setUp() throws Exception {
-        bridge = new PaisProxyBridge(); /* getRealBridge(); */
+        bridge = TestDriver.getTestBridge(); /* getRealBridge(); */
     }
 
     // runs after each test (clear database)
